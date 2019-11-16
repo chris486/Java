@@ -13,6 +13,7 @@ class ForDemo3 {
 
 		for(int x=1; x<=5; x++) {
 			jc *= x;
+			System.out.println(x+":"+jc);
 		}
 
 		System.out.println("5的阶乘是："+jc);
