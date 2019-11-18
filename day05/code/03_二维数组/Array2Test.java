@@ -1,5 +1,5 @@
 /*
-	二维数组遍历
+	浜岀淮鏁扮粍閬嶅巻
 */
 class Array2Test {
 	public static void main(String[] args) {
