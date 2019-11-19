@@ -46,20 +46,27 @@ class JiaMiDemo{
 
 		while(number>0) {
 			arr[index]  = number%10; //arr[0]=6,arr[1]=5,arr[2]=4,arr[3]=3,arr[4]=2,arr[5]=1
+			System.out.println(number);
 			number/=10; //number=12345,number=1234,number=123,number=12,number=1,number=0
+			System.out.println(number);
 			index++; //index=1,index=2,index=3,index=4,index=5,index=6
 		}
-
+		System.out.println("----------");
 		for(int x=0; x<index; x++) {
 			System.out.print(arr[x]);
 		}
 		System.out.println();
+		System.out.println("----------");
 
 		//第二步
 		for(int x=0; x<index; x++) {
 			arr[x] += 5;
+			System.out.println(arr[x]);
 			arr[x] %= 10;
+			System.out.println(arr[x]);
+			System.out.println();
 		}	
+		System.out.println("----------");
 
 		for(int x=0; x<index; x++) {
 			System.out.print(arr[x]);
@@ -70,7 +77,8 @@ class JiaMiDemo{
 		int temp = arr[0];
 		arr[0] = arr[index-1];
 		arr[index-1] = temp;
-
+		
+		//打印加密完成后的数据
 		for(int x=0; x<index; x++) {
 			System.out.print(arr[x]);
 		}
