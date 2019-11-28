@@ -22,5 +22,10 @@ class ArrayDemo {
 
 		//需求：我要获取数组中的最大值
 
+		int MAXNUM = ArrayTool.getMax(arr);
+		System.out.println("--------------------");
+		System.out.println(MAXNUM);
+		
+
 	}
 }
