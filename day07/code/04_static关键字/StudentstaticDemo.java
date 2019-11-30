@@ -9,7 +9,7 @@ class Student {
 	String name;
 	//年龄
 	int age;
-	//班级编号
+	//可以修饰成员变量--班级编号
 	//String classNumber;
 	static String classNumber;
 
@@ -32,7 +32,7 @@ class Student {
 class StudentDemo {
 	public static void main(String[] args) {
 		//创建学生对象
-		Student s1 = new Student("林青霞",28,"20150306");
+		Student s1 = new Student("林青霞",28);
 		s1.show();
 
 		/*
@@ -42,7 +42,7 @@ class StudentDemo {
 		Student s3 = new Student("马化腾",33,"20150306");
 		s3.show();
 		*/
-		Student s2 = new Student("马云",35);
+		Student s2 = new Student("马云",35,"20150306");
 		s2.show();
 
 		Student s3 = new Student("马化腾",33);
