@@ -1,9 +1,9 @@
 /*
-	������дע�����
-		A:������˽�з������ܱ���д
-		B:������д���෽��ʱ������Ȩ�޲��ܸ���
-			����һ�����ɡ�
-		C:���ྲ̬����������Ҳ����ͨ����̬����������д��
+	方法重写注意事项：
+		A:父类中私有方法不能被重写
+		B:子类重写父类方法时，访问权限不能更低
+			建议一样即可。
+		C:父类静态方法，子类也必须通过静态方法进行重写。
 */
 class Person {
 	public void show() {
@@ -45,7 +45,7 @@ class PersonDemo {
 	public static void main(String[] args) {
 		Student s = new Student();
 		s.show();
-		//s.show2();
+		//s.show2(); 私有方法不可重写，因此此处调用会报错
 		s.show3();
 		s.show4();
 	}
