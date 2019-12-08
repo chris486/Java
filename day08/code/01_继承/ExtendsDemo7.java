@@ -1,7 +1,15 @@
-public class Bird{
-    public void fly{
+class Bird {
+    public void fly() {
         System.out.println("Hello, I can fly.");
     }
 }
 
-public
+class Hen extends Bird {
+    public void fly() {
+        System.out.println("Sorry, I can't fly.");
+    }
+    public static void main(String[] args) {
+        Hen yellowhen = new Hen();
+        yellowhen.fly();
+    }
+}

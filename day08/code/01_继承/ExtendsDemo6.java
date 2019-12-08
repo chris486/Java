@@ -18,7 +18,7 @@ class Zi extends Fu{
 		System.out.println("method zi");
 	}
 
-	public void show() {
+	public void shows() {
 		System.out.println("show zi");
 	}
 }
