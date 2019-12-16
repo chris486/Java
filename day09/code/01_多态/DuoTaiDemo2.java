@@ -57,7 +57,7 @@ class DuoTaiDemo2 {
 		//向下转型
 		Dog d = (Dog)a;
 		d.eat();
-		d.help();
+		//d.help(); 为什么报错？？？
 		System.out.println("-------------");
 
 		//会报错吗?
