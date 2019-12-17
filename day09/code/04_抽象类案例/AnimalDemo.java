@@ -48,6 +48,17 @@ class Dog extends Animal {
 }
 
 //练习1：猫的实现：自己练习
+class Cat extends Animal{
+	public Cat(){}
+
+	public Cat(String name,int age){
+		super(name,age);
+	}
+
+	public eat(){
+		System.out.println("猫吃鱼");
+	}
+}
 
 class AnimalDemo {
 	public static void main(String[] args) {
@@ -57,12 +68,12 @@ class AnimalDemo {
 		d.setAge(3);
 		System.out.println(d.getName()+"---"+d.getAge());
 		d.eat();
-		System.out.println("--------------------------");
+		System.out.println("-----------无参测试结束---------------");
 
 		Dog d2 = new Dog("大黄",3);
 		System.out.println(d2.getName()+"---"+d2.getAge());
 		d2.eat();
-		System.out.println("--------------------------");
+		System.out.println("-----------带参测试结束---------------");
 
 		//多态测试
 		Animal a = new Dog();
@@ -70,12 +81,12 @@ class AnimalDemo {
 		a.setAge(3);
 		System.out.println(a.getName()+"---"+a.getAge());
 		a.eat();
-		System.out.println("--------------------------");
+		System.out.println("------------多态无参测试结束--------------");
 
 		Animal a2 = new Dog("大黄",3);
 		System.out.println(a2.getName()+"---"+a2.getAge());
 		a2.eat();
-		System.out.println("--------------------------");
+		System.out.println("------------多态带参测试结束--------------");
 
 		//练习2：猫的测试，多态的测试
 	}
